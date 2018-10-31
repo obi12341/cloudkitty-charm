@@ -4,6 +4,7 @@ include:
     - core
     - cli
     - fetch
+    - osplatform
     - contrib.openstack|inc=*
     - contrib.python.packages
     - contrib.storage
