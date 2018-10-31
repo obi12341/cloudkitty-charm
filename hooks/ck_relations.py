@@ -41,7 +41,6 @@ CONFIGS = ck_utils.register_configs()
 @hooks.hook('install.real')
 def install():
     execd_preinstall()
-    configure_installation_source('cloud:bionic-queens')
     add_source('ppa:objectif-libre/cloudkitty-queens')
     apt_update()
     apt_install(ck_utils.determine_packages(), fatal=True)
